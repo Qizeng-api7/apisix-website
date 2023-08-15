@@ -16,6 +16,7 @@ import slackIcon from '@iconify/icons-akar-icons/slack-fill';
 import youtubeIcon from '@iconify/icons-akar-icons/youtube-fill';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import style from './styles.module.scss';
+import EventPosterCardWrapper from './EventPosterCard';
 
 const footer = {
   links: [
@@ -89,6 +90,11 @@ const footer = {
           to: '/plugins',
           target: '_parent',
         },
+        {
+          label: 'Roadmap',
+          to: 'https://github.com/apache/apisix/milestones',
+          target: '_parent',
+        },
       ],
     },
   ],
@@ -99,7 +105,7 @@ const footer = {
   },
 
   copyright:
-        `Copyright © 2019-${new Date().getFullYear()} The Apache Software Foundation. Apache APISIX, APISIX®, Apache, the Apache feather logo, and the Apache APISIX project logo are either registered trademarks or trademarks of the Apache Software Foundation.`,
+    `Copyright © 2019-${new Date().getFullYear()} The Apache Software Foundation. Apache APISIX, APISIX®, Apache, the Apache feather logo, and the Apache APISIX project logo are either registered trademarks or trademarks of the Apache Software Foundation.`,
 };
 
 const FooterLink = ({
@@ -133,20 +139,20 @@ const Footer: FC = () => {
   return (
     <footer className={style.container}>
       {links && links.length > 0 && (
-      <div className={style.linksRow}>
-        {links.map(({ title, items }) => (
-          <div key={title} className={style.linksCol}>
-            <div>{title}</div>
-            <ul>
-              {items.map((v) => (
-                <li key={v.to} className="footer__item">
-                  <FooterLink {...v} />
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
+        <div className={style.linksRow}>
+          {links.map(({ title, items }) => (
+            <div key={title} className={style.linksCol}>
+              <div>{title}</div>
+              <ul>
+                {items.map((v) => (
+                  <li key={v.to} className="footer__item">
+                    <FooterLink {...v} />
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       )}
       <div className={style.copyright}>
         <Link href={logo.href}>
@@ -154,6 +160,7 @@ const Footer: FC = () => {
         </Link>
         <div className={style.text}>{copyright}</div>
       </div>
+      <EventPosterCardWrapper />
     </footer>
   );
 };
