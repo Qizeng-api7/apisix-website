@@ -164,6 +164,12 @@ module.exports = [
         githubUsername: 'tzssangglass',
         avatarUrl: 'https://avatars.githubusercontent.com/u/30819887?v=4',
       },
+      {
+        name: 'Shirui Zhao',
+        username: 'zhaoshirui',
+        githubUsername: 'soulbird',
+        avatarUrl: 'https://avatars.githubusercontent.com/u/11553520?v=4',
+      },
     ],
   },
   {
@@ -312,6 +318,12 @@ module.exports = [
         username: 'kingluo',
         githubUsername: 'kingluo',
         avatarUrl: 'https://avatars.githubusercontent.com/u/4401042?v=4',
+      },
+      {
+        name: 'Fucheng Jiang',
+        username: 'jiangfucheng',
+        githubUsername: 'jiangfucheng',
+        avatarUrl: 'https://avatars.githubusercontent.com/u/33349046?v=4'
       },
     ],
   },
