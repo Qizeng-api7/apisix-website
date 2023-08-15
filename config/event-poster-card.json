@@ -1,16 +1,18 @@
 {
-  "$schema": "../website/src/components/event-poster-card-schema.json",
+  "$schema": "./event-poster-card-schema.json",
   "show": true,
-  "expire": "2022-11-27",
+  "expire": "2023-07-04",
   "width": 400,
   "config": {
     "en": {
-      "disable": true
+      "image": "https://static.apiseven.com/uploads/2023/06/29/PcXJ4a8R_APISIX%20Singapore%20website%20poster.png",
+      "link": "https://apisix.apache.org/docs/general/events/#singapore-meetup",
+      "description": "Apache APISIX Community Meetup Singapore"
     },
     "zh": {
-      "image": "https://static.apiseven.com/2022/11/22/637c9b44eb861.png",
-      "link": "http://hdxu.cn/M7hd7",
-      "description": "直播预告｜Apache APISIX x Apache SeaTunnel 助力探索提升数据价值之道"
+      "image": "https://static.apiseven.com/uploads/2023/06/29/PcXJ4a8R_APISIX%20Singapore%20website%20poster.png",
+      "link": "https://apisix.apache.org/docs/general/events/#singapore-meetup",
+      "description": "Apache APISIX Community Meetup Singapore"
     }
   }
 }
